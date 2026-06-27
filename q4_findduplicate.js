@@ -7,9 +7,7 @@ function findDuplicate(num) {
   let j = [];
   let k = [];
   for (let i = 0; i < num.length; i++) {
-    if (i === 0) {
-      j.push(num[0]);
-    } else if (j.includes(num[i])) {
+    if (j.includes(num[i])) {
       k.push(num[i]);
     } else {
       j.push(num[i]);
